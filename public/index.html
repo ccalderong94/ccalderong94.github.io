@@ -1,1 +1,113 @@
-hello world!
+<!DOCTYPE html>
+
+<head>
+  <style>
+    
+    body {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color: #0f0e17;
+    }
+
+    .banner-image {
+      width: 128px;
+      height: 128px;
+      object-fit:cover;
+      border-radius: 128px;
+      /* should I play with the border? */
+    }
+    
+    .thumbnail {
+      width: 48px;
+      height: 48px;
+      object-fit:cover;
+      border-radius: 48px;
+      /* should I play with the border? */
+    }
+
+    .name{
+      color:#fffffe;
+    }
+
+    .social-icons a {
+      color: #fffffe;
+      text-decoration: none;
+    }
+
+    .link {
+      background-color: #ff8906;
+    }
+
+    .link a { /* descendant combinator, only targets descendatn of elements with class link */
+      color: #fffffe;
+      text-decoration: none;
+    }
+
+  </style>
+</head>
+
+
+<div>
+
+  <div class="banner">
+    <img src="/thumbnails/photo-carlos.jpg" alt="Carlos Calderon headshot" class="banner-image"> <!--My photo-->
+  </div>
+
+  <div class="name">
+    Carlos Calderon
+  </div>
+
+  <div class="social icons">
+    <a href="https://github.com/ccalderong94" target="_blank">
+      GitHub
+    </a>
+
+    <a href="https://www.instagram.com/c_calderong/" target="_blank">
+      Instagram
+    </a>
+
+    <a href="https://www.linkedin.com/in/ccalderong/" target="_blank">
+      LinkedIn
+    </a>
+  </div>
+
+  <div class="link"> <!-- Latest BCG Insight -->
+    <img src="/thumbnails/Work.jpg" class="thumbnail">
+    <a href="https://www.bcg.com/featured-insights/closing-the-climate-action-gap" target="_blank">
+      BCG Insight: Climate Change
+    </a>
+  </div>
+  
+  <div class="link"> <!-- Social Impact -->
+    <img src="/thumbnails/Impact.jpg" class="thumbnail">
+    <a href="https://redf.org/" target="_blank">
+      Social Impact Insight: REDF
+    </a>
+  </div>
+
+  <div class="link">  <!-- My Shows -->
+    <img src="/thumbnails/TV.jpg" class="thumbnail">
+    <a href="https://www.imdb.com/title/tt4094300/" target="_blank">
+      Recommended show: Crazy ex-girlfriend
+    </a>
+  </div>
+
+  <div class="link"> <!-- Music - My playlist -->
+    <img src="/thumbnails/Playlist.jpg" class="thumbnail">
+    <a href="https://open.spotify.com/playlist/36gz37BBbGe6iIimQEmNNg?si=d45d72ae1c23447a" target="_blank">
+      My spotify playlist
+    </a>
+  </div>
+
+    
+  <div class="link"><!-- Music Top -->
+    <img src="/thumbnails/TopMusic.jpg" class="thumbnail">
+    <a href="https://www.imdb.com/title/tt4094300/" target="_blank">    <!-- Update -->
+      Top Spotify Tracks! 
+    </a>
+  </div>
+
+
+
+
+</body>
