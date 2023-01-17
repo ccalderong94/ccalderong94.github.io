@@ -7,7 +7,15 @@
       padding-top: 40px;
       padding-bottom: 40px;
       background-color: #0f0e17;
+      display: flex;
+      justify-content: center;
     }
+
+    .banner {
+      display: flex;
+      justify-content: center;
+    }
+
 
     .banner-image {
       width: 128px;
@@ -27,6 +35,13 @@
 
     .name{
       color:#fffffe;
+      display: flex;
+      justify-content: center;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: space-around;
     }
 
     .social-icons a {
@@ -36,18 +51,35 @@
 
     .link {
       background-color: #ff8906;
+      display: flex;
+      align-items: center;
+      padding: 5px;
     }
 
     .link a { /* descendant combinator, only targets descendatn of elements with class link */
       color: #fffffe;
       text-decoration: none;
+      text-align: center;
+      flex-grow: 1;
     }
+
+    .items {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 640px;
+      flex-grow: 1;
+    }
+
+    /* * {
+      border: thin red solid;
+    }*/
 
   </style>
 </head>
 
 
-<div>
+<div class="items">
 
   <div class="banner">
     <img src="/thumbnails/photo-carlos.jpg" alt="Carlos Calderon headshot" class="banner-image"> <!--My photo-->
@@ -57,7 +89,7 @@
     Carlos Calderon
   </div>
 
-  <div class="social icons">
+  <div class="social-icons">
     <a href="https://github.com/ccalderong94" target="_blank">
       GitHub
     </a>
@@ -72,14 +104,16 @@
   </div>
 
   <div class="link"> <!-- Latest BCG Insight -->
-    <img src="/thumbnails/Work.jpg" class="thumbnail">
+    <img src="/thumbnails/Work.jpg" class="thumbnail"
+        alt="Image Work">
     <a href="https://www.bcg.com/featured-insights/closing-the-climate-action-gap" target="_blank">
       BCG Insight: Climate Change
     </a>
   </div>
   
   <div class="link"> <!-- Social Impact -->
-    <img src="/thumbnails/Impact.jpg" class="thumbnail">
+    <img src="/thumbnails/Impact.jpg" class="thumbnail"
+        alt="Image Impact">
     <a href="https://redf.org/" target="_blank">
       Social Impact Insight: REDF
     </a>
@@ -87,13 +121,15 @@
 
   <div class="link">  <!-- My Shows -->
     <img src="/thumbnails/TV.jpg" class="thumbnail">
-    <a href="https://www.imdb.com/title/tt4094300/" target="_blank">
+    <a href="https://www.imdb.com/title/tt4094300/" target="_blank"
+        alt="Image Shows">
       Recommended show: Crazy ex-girlfriend
     </a>
   </div>
 
   <div class="link"> <!-- Music - My playlist -->
-    <img src="/thumbnails/Playlist.jpg" class="thumbnail">
+    <img src="/thumbnails/Playlist.jpg" class="thumbnail"
+        alt="Image Playlist">
     <a href="https://open.spotify.com/playlist/36gz37BBbGe6iIimQEmNNg?si=d45d72ae1c23447a" target="_blank">
       My spotify playlist
     </a>
@@ -101,7 +137,8 @@
 
     
   <div class="link"><!-- Music Top -->
-    <img src="/thumbnails/TopMusic.jpg" class="thumbnail">
+    <img src="/thumbnails/TopMusic.jpg" class="thumbnail"
+        alt="Image Music">
     <a href="https://www.imdb.com/title/tt4094300/" target="_blank">    <!-- Update -->
       Top Spotify Tracks! 
     </a>
